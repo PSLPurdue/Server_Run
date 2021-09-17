@@ -4,6 +4,12 @@ Bell, Halstead, Brown
 
 # General Comands
 
+## Running Commands
+
+Run bash File -> sbatch FILE_NAME.sh
+
+Cancel Job (Job ID can be found using "squeue -u $USER") -> scancel JOBID 
+
 ## General information commands
 
 Show the number of available cpus -> myquota
@@ -12,16 +18,12 @@ Show all jobs running under "aarrieta" account -> squeue -A aarrieta
 
 Show all jobs running under "aarrieta" account -> squeue -u $USER
 
-## Running Commands
-
-Run bash File -> sbatch FILE_NAME.sh
-
-Cancel Job (Job ID can be found using "squeue -u $USER") -> scancel JOBID 
-
 ## Check ABAQUS Tokens
 
 ml bioinfo lmstat
+
 lmstat -a -c 1736@mooring.ecn.purdue.edu 
+
 lmstat -f abaqus -c 1736@mooring.ecn.purdue.edu | grep -iE "ARRIETA|aarrieta|hwang125|riley104|dmboston|jrivaspa|thakkara|chan160|rojas23|osorio2|caddis|morga263|kboddapa|sadeghs|liang287|yki"
 
 IF YOU ARE NOT ON THE LIST, PLEASE ADD YOURSELF
