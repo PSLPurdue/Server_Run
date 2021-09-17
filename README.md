@@ -13,6 +13,13 @@ First install enhanced terminal for Windows with X11 server, tabbed SSH client, 
 
 ![Domes](Figures/Remote_Host.PNG)
 
+
+You can also access the server online using the following links (Remote Desktop):
+
++ [Bell](https://www.rcac.purdue.edu/compute/bell)
++ [Halstead](https://www.rcac.purdue.edu/compute/halstead)
++ [Brown](https://www.rcac.purdue.edu/compute/brown)
+
 ## This repository includes
 
 +   ABAQUS_RUN.sh               ->  Bash file to run Abaqus job
