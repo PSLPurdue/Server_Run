@@ -1,22 +1,32 @@
-# Basic commands and Files to run jobs on a SLURM server
+# Basic commands and Files to run jobs on a SLURM server (Bell, Halstead, Brown)
 
-Bell, Halstead, Brown
+First install enhanced terminal for Windows with X11 server, tabbed SSH client, we recommend MobaXterm:
 
-# General Comands
++ [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
++ [PuTTY](https://www.putty.org/)
+
+### Remote Host
+
++ Bell     -> bell-fe05.rcac.purdue.edu
++ Halstead -> halstead-fe00.rcac.purdue.edu
++ Brown    -> brown-fe01.rcac.purdue.edu
+
+![Domes](Figures/Remote_Host.PNG)
+
+## This repository includes
+
++   ABAQUS_RUN.sh   ->  bash file to run Abaqus job
 
 ## Running Commands
 
-Run bash File -> sbatch FILE_NAME.sh
-
-Cancel Job (Job ID can be found using "squeue -u $USER") -> scancel JOBID 
+ + Run bash File                                            -> sbatch FILE_NAME.sh
+ + Cancel Job (Job ID can be found using "squeue -u $USER") -> scancel JOBID 
 
 ## General information commands
 
-Show the number of available cpus -> myquota
-
-Show all jobs running under "aarrieta" account -> squeue -A aarrieta
-
-Show all jobs running under "aarrieta" account -> squeue -u $USER
++ Show the number of available cpus                 ->  myquota
++ Show all jobs running under "aarrieta" account    ->  squeue -A aarrieta
++ Show all jobs running under "aarrieta" account    ->  squeue -u $USER
 
 ## Check ABAQUS Tokens
 
@@ -32,6 +42,6 @@ IF YOU ARE NOT ON THE LIST, PLEASE ADD YOURSELF
 - Avoid files been deleted after 60 days from the scratch folder
 - Touch every file in the folder to updated the modified dat
 
-Go to user scratch -> cd $CLUSTER_SCRATCH
-Change the date of all your files -> find . -exec touch {} \;
-Check if there are still files to remove -> purgelist
++ Go to user scratch                        ->  cd $CLUSTER_SCRATCH
++ Change the date of all your files         ->  find . -exec touch {} \;
++ Check if there are still files to remove  ->  purgelist
