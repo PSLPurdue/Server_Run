@@ -15,7 +15,8 @@ First install enhanced terminal for Windows with X11 server, tabbed SSH client, 
 
 ## This repository includes
 
-+   ABAQUS_RUN.sh   ->  bash file to run Abaqus job
++   ABAQUS_RUN.sh               ->  Bash file to run Abaqus job
++   ABAQUS_Array_Submission     ->  Bash file to run Parallel Abaqus job with SLURM array submission
 
 ## Running Commands
 
