@@ -5,7 +5,7 @@ First install enhanced terminal for Windows with X11 server, tabbed SSH client, 
 + [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 + [PuTTY](https://www.putty.org/)
 
-### Remote Host
+### Remote Host (MobaXterm)
 
 + Bell     -> bell-fe05.rcac.purdue.edu
 + Halstead -> halstead-fe00.rcac.purdue.edu
