@@ -22,7 +22,8 @@ You can also access the server online using the following links (Remote Desktop)
 
 ## This repository includes
 
-+   ABAQUS_RUN.sh               ->  Bash file to run Abaqus job
++   ABAQUS_PYTHON_RUN.sh        ->  Bash file to run Abaqus jobs with python scripts
++   ABAQUS_INP_RUN.sh        	->  Bash file to run Abaqus jobs with .inp files
 +   ABAQUS_Array_Submission     ->  Bash file to run Parallel Abaqus job with SLURM array submission
 
 ## Running Commands
