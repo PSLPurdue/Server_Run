@@ -1,12 +1,12 @@
 # Basic commands and Files to run jobs on a SLURM server (Bell, Halstead, Brown)
 
-## This repository includes
-
 +   ABAQUS_PYTHON_RUN.sh        ->  Bash file to run Abaqus jobs with python scripts
 +   ABAQUS_INP_RUN.sh        	->  Bash file to run Abaqus jobs with .inp files
 +   ABAQUS_Array_Submission     ->  Bash file to run Parallel Abaqus job with SLURM array submission
 
-First install enhanced terminal for Windows with X11 server, tabbed SSH client, we recommend MobaXterm:
+## Install enhanced terminal
+
+First install enhanced terminal for Windows with X11 server, tabbed SSH client, we recommend MobaXterm, but you can also use PuTTY:
 
 + [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 + [PuTTY](https://www.putty.org/)
@@ -18,7 +18,6 @@ First install enhanced terminal for Windows with X11 server, tabbed SSH client, 
 + Brown    -> brown-fe01.rcac.purdue.edu
 
 ![Domes](Figures/Remote_Host.PNG)
-
 
 You can also access the server online using the following links (Remote Desktop):
 
@@ -38,14 +37,13 @@ You can also access the server online using the following links (Remote Desktop)
 
 ## Create anaconda enviroment (python package installation)
 
-### Create enviroment
 + module load anaconda/5.1.0-py36
 + conda-env-mod create -n mypackages
 
 ### Load Enviroment
+
 + module load use.own
 + module load conda-env/mypackages-py3.6.4
-
 
 ## General information commands
 
@@ -65,6 +63,7 @@ lmstat -f abaqus -c 1736@mooring.ecn.purdue.edu | grep -iE "ARRIETA|aarrieta|hwa
 IF YOU ARE NOT ON THE LIST, PLEASE ADD YOURSELF
 
 ## Purge List
+
 - Avoid files been deleted after 60 days from the scratch folder
 - Touch every file in the folder to updated the modified dat
 
