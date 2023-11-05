@@ -1,4 +1,4 @@
-# Basic commands and Files to run jobs on a SLURM server (Bell, Halstead, Brown)
+# Basic commands and Files to run jobs on a SLURM server
 
 +   ABAQUS_PYTHON_RUN.sh        ->  Bash file to run Abaqus jobs with python scripts
 +   ABAQUS_INP_RUN.sh        	->  Bash file to run Abaqus jobs with .inp files
@@ -8,10 +8,11 @@
 
 First install enhanced terminal for Windows with X11 server, tabbed SSH client, we recommend MobaXterm, but you can also use PuTTY:
 
++ [Visual Studio Code](https://code.visualstudio.com)
 + [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 + [PuTTY](https://www.putty.org/)
 
-### Remote Host (MobaXterm)
+### Remote Hosts (MobaXterm)
 
 + Bell     -> bell-fe05.rcac.purdue.edu
 + Halstead -> halstead-fe00.rcac.purdue.edu
@@ -32,7 +33,7 @@ You can also access the server online using the following links (Remote Desktop)
  
 ## Load Module
 
-+ module load "module name" (abaqus/2020 , mathematica, matlab)
++ module load "module name" (intel, abaqus/2021 , mathematica, matlab)
 + module list
 
 ## Create anaconda enviroment (python package installation)
@@ -61,12 +62,3 @@ lmstat -a -c 1736@mooring.ecn.purdue.edu
 lmstat -f abaqus -c 1736@mooring.ecn.purdue.edu | grep -iE "ARRIETA|aarrieta|hwang125|riley104|dmboston|jrivaspa|thakkara|chan160|rojas23|osorio2|caddis|morga263|kboddapa|sadeghs|liang287|yki"
 
 IF YOU ARE NOT ON THE LIST, PLEASE ADD YOURSELF
-
-## Purge List
-
-- Avoid files been deleted after 60 days from the scratch folder
-- Touch every file in the folder to updated the modified dat
-
-+ Go to user scratch                        ->  cd $CLUSTER_SCRATCH
-+ Change the date of all your files         ->  find . -exec touch {} \;
-+ Check if there are still files to remove  ->  purgelist

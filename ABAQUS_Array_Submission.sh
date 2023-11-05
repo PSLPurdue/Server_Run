@@ -3,9 +3,9 @@
 #SBATCH -A aarrieta
 #SBATCH --nodes=1 --ntasks=20
 #SBATCH --time=10:00:00
-#SBATCH -J Gripper_finger
-#SBATCH -o Gripper_finger%j.out
-#SBATCH -e Gripper_finger%j.out
+#SBATCH -J Array_Example
+#SBATCH -o Array_Example%j.out
+#SBATCH -e Array_Example%j.out
 #SBATCH --mail-user=osorio2@purdue.edu # Destination email address
 #SBATCH --mail-type=END,FAIL # Event(s) that triggers email notification (BEGIN,END,FAIL,ALL)
 #SBATCH --array 1-1%1 # IMPORTANT! This gives you the paralell runs --> array initial-last%max jobs at a time
@@ -21,7 +21,7 @@ echo "Starting in: $(pwd)"
 # ------------------------------------------------------
 # Load Modules
 # ------------------------------------------------------
-module load intel abaqus/2020
+module load intel abaqus/2021
 unset SLURM_GTIDS
 
 # ------------------------------------------------------
