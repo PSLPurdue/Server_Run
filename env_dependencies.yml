@@ -1,0 +1,17 @@
+channels:
+  - defaults
+  - conda-forge
+  - conda
+dependencies:
+  - python=3.9
+  - jupyter
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learnconda 
+  - scipy
+  - h5py
+  - netcdf4
+  - yellowbrick
+  - scienceplots
+  - numba
