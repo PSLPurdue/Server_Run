@@ -92,6 +92,7 @@ Cancel:
 #SBATCH --mail-type=END,FAIL
 #SBATCH --array 1-1%12
 # array = initial-last%max_concurrent
+#SBATCH --partition=cpu
 
 if [[ -n $SLURM_SUBMIT_DIR ]]; then
     cd $SLURM_SUBMIT_DIR
