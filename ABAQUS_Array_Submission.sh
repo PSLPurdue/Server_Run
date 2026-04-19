@@ -9,6 +9,7 @@
 #SBATCH --mail-user=osorio2@purdue.edu # Destination email address
 #SBATCH --mail-type=END,FAIL # Event(s) that triggers email notification (BEGIN,END,FAIL,ALL)
 #SBATCH --array 1-1%1 # IMPORTANT! This gives you the paralell runs --> array initial-last%max jobs at a time
+#SBATCH --partition=cpu
 
 # Go where we were when we typed 'squeue'
 if [[ -n $SLURM_SUBMIT_DIR ]]; then
@@ -21,7 +22,7 @@ echo "Starting in: $(pwd)"
 # ------------------------------------------------------
 # Load Modules
 # ------------------------------------------------------
-module load intel abaqus/2021
+module load intel abaqus/2023
 unset SLURM_GTIDS
 
 # ------------------------------------------------------

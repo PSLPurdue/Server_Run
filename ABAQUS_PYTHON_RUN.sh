@@ -8,11 +8,12 @@
 #SBATCH -e bash_example%j.out           # ERROR FILE NAME
 #SBATCH --mail-user=osorio2@purdue.edu  # DESTINATION EMAIL ADRESS
 #SBATCH --mail-type=END,FAIL            # Event(s) that triggers email notification (BEGIN,END,FAIL,ALL)
+#SBATCH --partition=cpu
 
 #------------------------------------------------------------------------------------------------------
 # LOAD MODULES
 #------------------------------------------------------------------------------------------------------
-module load intel abaqus/2021           # BELL CLUSTER
+module load intel abaqus/2023
 unset SLURM_GTIDS
 
 #------------------------------------------------------------------------------------------------------
